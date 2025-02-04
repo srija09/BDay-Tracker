@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d; /* Dark background */
+    color: #d4edda; /* Light greenish text */
+    text-align: center;
+    margin: 20px;
+}
+
+/* Dropdown styling with a modern rolling effect */
+select {
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #28a745;
+    background-color: #0d0d0d; /* Black background */
+    color: #39e75f; /* Green text */
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    width: 120px;
+    transition: all 0.3s ease-in-out;
+    appearance: none; /* Removes default dropdown styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+/* Adding a drop-down arrow */
+select::-ms-expand {
+    display: none;
+}
+
+/* Hover effect */
+select:hover {
+    border-color: #39e75f;
+    box-shadow: 0 0 10px #39e75f;
+}
+
+/* Opened dropdown list */
+select:focus {
+    outline: none;
+    box-shadow: 0 0 15px #39e75f;
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+    background-color: #28a745;
+    color: #0d0d0d;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #39e75f;
+    box-shadow: 0 0 15px #39e75f;
+}
+
+/* Calendar section */
+#calendar {
+    margin-top: 20px;
+    border: 1px solid #28a745;
+    padding: 15px;
+    display: inline-block;
+    width: 60%;
+    background-color: rgba(40, 167, 69, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #28a745;
+}
+
+/* Each birthday entry */
+.birthday-entry {
+    font-size: 18px;
+    font-weight: bold;
+    color: #39e75f;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid rgba(40, 167, 69, 0.5); /* Horizontal line */
+}
+
+/* Status message */
+#status {
+    font-size: 20px;
+    font-weight: bold;
+    color: #39e75f;
+    margin-top: 15px;
+}

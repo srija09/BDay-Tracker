@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h1>Enter Your Birthdate</h1>
+
+    <!-- New Date Selector -->
+    <select id="day"></select>
+    <select id="month"></select>
+    <select id="year"></select>
+    
+    <button onclick="submitBirthdate()">Submit</button>
+
+    <h2>Top 100 Birthdays</h2>
+    <div id="calendar"></div>
+    <p id="status"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
